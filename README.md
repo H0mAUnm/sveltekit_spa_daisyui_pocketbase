@@ -1,0 +1,1 @@
+# sveltekit_spa_daisyui_pocketbase
