@@ -1,0 +1,1 @@
+import{S as e,i as n,s as a,o as i}from"../../../../chunks/index-aedd6872.js";import{p as r}from"../../../../chunks/stores-3f27b470.js";import{g as s}from"../../../../chunks/navigation-b75dba13.js";function l(t){return i(async()=>{r.authStore.isValid?s("/my/settings/profile"):s("/login")}),[]}class m extends e{constructor(o){super(),n(this,o,l,null,a,{})}}export{m as default};
