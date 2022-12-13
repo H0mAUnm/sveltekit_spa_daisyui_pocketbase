@@ -1,5 +1,6 @@
+const pocketbaseUrl = import.meta.env.VITE_POCKETBASE_URL;
 import PocketBase from "pocketbase";
-export const pb = new PocketBase("http://127.0.0.1:8090");
+export const pb = new PocketBase(pocketbaseUrl);
 
 import { writable } from "svelte/store";
 export const User = writable({});

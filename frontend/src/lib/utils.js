@@ -1,3 +1,4 @@
+const pocketbaseUrl = import.meta.env.VITE_POCKETBASE_URL;
 const { randomBytes } = await import("node:crypto");
 
 export const serializeNonPOJOs = (obj) => {
@@ -11,7 +12,7 @@ export const generateUsername = (name) => {
 };
 
 export const getImageURL = (collectionId, recordId, fileName, size = "0x0") => {
-  return `http://localhost:8090/api/files/${collectionId}/${recordId}/${fileName}?thumb=${size}`;
+  return `${pocketbaseUrl}/api/files/${collectionId}/${recordId}/${fileName}?thumb=${size}`;
 };
 
 export const validateData = async (formData, schema) => {
