@@ -1,5 +1,5 @@
 # sveltekit_spa_daisyui_pocketbase
-This project is developed based on [huntabyte/showcase](https://github.com/huntabyte/showcase), with my dream ❤ choice of stacks: PocketBase, SvelteKit, and DaisyUI.
+This project is developed based on [huntabyte/showcase](https://github.com/huntabyte/showcase), with my dream ❤ choice of stack: PocketBase, SvelteKit, and DaisyUI (Tailwind CSS).
 The original repo uses sveltekit - SSR mode, which needs a backend of Node.js.
 If you want to deploy on a custom server without node.js, you can use this non-SSR version.
 
