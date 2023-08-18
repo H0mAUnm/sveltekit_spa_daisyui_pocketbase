@@ -1,5 +1,5 @@
-pb_data
-pb_migrations
+/pb_data
+/pb_migrations
 CHANGELOG.md
 LICENSE.md
 pocketbase.exe

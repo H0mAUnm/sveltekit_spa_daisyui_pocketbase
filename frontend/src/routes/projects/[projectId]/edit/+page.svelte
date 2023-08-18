@@ -51,8 +51,8 @@
   async function onSubmit(e) {
     let body = new FormData(e.target);
 
-    if (thumbnail == dummyThumbnail) {
-      formData.set("thumbnail", null);
+    if (thumbnail == dummyThumbnail || thumbnail.slice(0, 4) != "blob") {
+      body.delete("thumbnail");
     }
 
     const { formData, err } = await validateData(body, updateProjectSchema);

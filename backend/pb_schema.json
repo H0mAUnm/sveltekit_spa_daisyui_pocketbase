@@ -11,7 +11,6 @@
         "type": "text",
         "system": false,
         "required": false,
-        "unique": false,
         "options": {
           "min": null,
           "max": null,
@@ -24,7 +23,6 @@
         "type": "file",
         "system": false,
         "required": false,
-        "unique": false,
         "options": {
           "maxSelect": 1,
           "maxSize": 5242880,
@@ -35,10 +33,12 @@
             "image/svg+xml",
             "image/gif"
           ],
-          "thumbs": null
+          "thumbs": null,
+          "protected": false
         }
       }
     ],
+    "indexes": [],
     "listRule": "id = @request.auth.id",
     "viewRule": "id = @request.auth.id",
     "createRule": "",
@@ -67,7 +67,6 @@
         "type": "text",
         "system": false,
         "required": false,
-        "unique": false,
         "options": {
           "min": null,
           "max": null,
@@ -80,7 +79,6 @@
         "type": "text",
         "system": false,
         "required": false,
-        "unique": false,
         "options": {
           "min": null,
           "max": null,
@@ -93,7 +91,6 @@
         "type": "text",
         "system": false,
         "required": false,
-        "unique": false,
         "options": {
           "min": null,
           "max": null,
@@ -106,12 +103,12 @@
         "type": "file",
         "system": false,
         "required": false,
-        "unique": false,
         "options": {
           "maxSelect": 1,
           "maxSize": 5242880,
           "mimeTypes": [],
-          "thumbs": []
+          "thumbs": [],
+          "protected": false
         }
       },
       {
@@ -120,11 +117,12 @@
         "type": "relation",
         "system": false,
         "required": false,
-        "unique": false,
         "options": {
-          "maxSelect": 1,
           "collectionId": "_pb_users_auth_",
-          "cascadeDelete": false
+          "cascadeDelete": false,
+          "minSelect": null,
+          "maxSelect": 1,
+          "displayFields": null
         }
       },
       {
@@ -133,13 +131,13 @@
         "type": "url",
         "system": false,
         "required": false,
-        "unique": false,
         "options": {
           "exceptDomains": null,
           "onlyDomains": null
         }
       }
     ],
+    "indexes": [],
     "listRule": "",
     "viewRule": "",
     "createRule": "",

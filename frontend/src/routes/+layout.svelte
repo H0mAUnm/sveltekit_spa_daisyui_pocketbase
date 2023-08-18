@@ -66,11 +66,7 @@
               <a href="/my/projects" class="justify-between">My Projects</a>
             </li>
             <li><a href="/my/settings">Settings</a></li>
-            <li>
-              <form action="/logout" method="POST">
-                <button type="submit" class="w-full text-start">Logout</button>
-              </form>
-            </li>
+            <li><a href="/logout">Logout</a></li>
           </ul>
         </div>
       {/if}

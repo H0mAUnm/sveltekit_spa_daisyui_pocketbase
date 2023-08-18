@@ -1,10 +1,10 @@
 <script>
-  import { Icon, Pencil, ExternalLink } from "svelte-hero-icons";
+  import { Icon, Pencil, ArrowTopRightOnSquare } from "svelte-hero-icons";
   import { getImageURL } from "$lib/utils";
   export let project;
 </script>
 
-<div class="card w-72 bg-base-100 shadow-xl border border-gray-200">
+<div class="card w-auto bg-base-100 shadow-xl border border-gray-200">
   <figure class="max-h-32">
     <img
       src={project?.thumbnail
@@ -24,7 +24,7 @@
       </div>
       <div class="tooltip" data-tip="View Project">
         <a href="/projects/{project.id}" class="btn btn-square btn-sm">
-          <Icon src={ExternalLink} class="w-4 h-4" />
+          <Icon src={ArrowTopRightOnSquare} class="w-4 h-4" />
         </a>
       </div>
     </div>
